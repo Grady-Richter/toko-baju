@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register — Toko Baju</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+    <div class="auth-card">
+        <div class="brand">
+            <h2>Buat Akun</h2>
+            <p class="subtitle" align="center">Daftar dan mulai belanja sekarang</p>
+        </div>
+        <br>
+        <form action="register.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Pilih username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Buat password" required>
+            </div>
+            <input type="hidden" name="role" value="user">
+
+            <input type="submit" value="Daftar Sekarang">
+        </form>
+
+        <p class="auth-footer">
+            Sudah punya akun? <a href="login.html">Login di sini</a>
+        </p>
+    </div>
+</body>
+</html>
